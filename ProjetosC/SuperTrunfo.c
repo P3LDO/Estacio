@@ -98,7 +98,7 @@ int main (){
     
 
         printf("==============================================================\n");
-        printf("Os dados da carta 1 sao: \n");
+        printf("Os dados da carta 2 sao: \n");
         printf("Estado: %s\n", &Estado2); 
         printf("Codigo: %s\n", &Codigo2);
         printf("Nome: %s\n", &Nome_C2);
