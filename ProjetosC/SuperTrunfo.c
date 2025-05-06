@@ -63,7 +63,7 @@ int main (){
         printf("PIB: %.2f\n", pib1);
         printf("Pontos Turisticos: %d\n", Turi1);
         printf("A densidade do estado: %.2f\n", dens1);
-        printf("O pib per capita e: %.2f\n", pibcap1);
+        printf("O pib per capita e: %.5f\n", pibcap1);
         printf("==============================================================\n");
 
 
@@ -104,7 +104,10 @@ int main (){
         printf("   agora escreva o numero de pontos turisticos do estado:     \n");
         printf("==============================================================\n");
         scanf("%d", &Turi2 );
-    
+
+        dens2 = (float) Polp2 / Area2;
+
+        pibcap2 = (float) pib2 / Polp2;
 
         printf("==============================================================\n");
         printf("Os dados da carta 2 sao: \n");
@@ -115,6 +118,8 @@ int main (){
         printf("Area (M2): %.2f\n", Area2);
         printf("PIB: %.2f\n", pib2);
         printf("Pontos Turisticos: %d\n", Turi2);
+        printf("A densidade do estado: %.2f\n", dens2);
+        printf("O pib per capita e: %.5f\n", pibcap2);
         printf("==============================================================\n");
 
         
