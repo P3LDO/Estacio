@@ -25,6 +25,6 @@ int main() {
     printf("o valor da multiplicação deles e: %d\n", multiclicacao);
     printf("o valor da divisao deles e: %d\n", divisao);
 
-
+    return 0;
 
 }
