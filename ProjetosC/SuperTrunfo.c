@@ -9,6 +9,8 @@ int main (){
     int Polp1, Polp2; //polpulação
     float Area1, Area2;
     float pib1, pib2;
+    float pibcap1, pibcap2;
+    float dens1, dens2;
 
 
         printf("==============================================================\n");
@@ -45,6 +47,10 @@ int main (){
         printf("   agora escreva o numero de pontos turisticos do estado:     \n");
         printf("==============================================================\n");
         scanf(" %d", &Turi1 );
+
+        dens1 = (float) Polp1 / Area1;
+
+        pibcap1 = (float) pib1 / Polp1;
     
 
         printf("==============================================================\n");
@@ -56,6 +62,8 @@ int main (){
         printf("Area (M2): %.2f\n", Area1);
         printf("PIB: %.2f\n", pib1);
         printf("Pontos Turisticos: %d\n", Turi1);
+        printf("A densidade do estado: %.2f\n", dens1);
+        printf("O pib per capita e: %.2f\n", pibcap1);
         printf("==============================================================\n");
 
 
