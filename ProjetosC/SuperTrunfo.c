@@ -11,6 +11,8 @@ int main (){
     float pib1, pib2;
     float pibcap1, pibcap2;
     float dens1, dens2;
+    float Spoder1, Spoder2;
+    float Dens1V, Dens2V;
 
 
         printf("==============================================================\n");
@@ -66,10 +68,6 @@ int main (){
         printf("O pib per capita e: %.5f\n", pibcap1);
         printf("==============================================================\n");
 
-
-
-
-
         printf("==============================================================\n");
         printf("       incira a letra do segundo estado (*de A a H):         \n");
         printf("==============================================================\n");
@@ -119,10 +117,30 @@ int main (){
         printf("PIB: %.2f\n", pib2);
         printf("Pontos Turisticos: %d\n", Turi2);
         printf("A densidade do estado: %.2f\n", dens2);
-        printf("O pib per capita e: %.5f\n", pibcap2);
+        printf("O pib per capita e: %.3f\n", pibcap2);
         printf("==============================================================\n");
 
-        
-    
+        Dens1V = 1 / dens1;
+
+        Spoder1 = Polp1 + pib1 + pibcap1 + dens1;
+
+        Dens2V = 1 / dens2;
+
+        Spoder2 = Polp2 + pib2 + pibcap2 + dens2;
+
+        printf("==============================================================\n");
+        printf("AGORA VEREMOS QUAL CARTA TEM MAIS PONTOS \n");
+        printf("SE O RESULDATO FOR 1 A PRIMEIRA CARTA VENCEU\n");
+        printf("SE O RESULTADO FOR 0 A SEGUNDA CARTA VENCEU \n   ");
+        printf("==============================================================\n");
+        printf("o vencedor do PIB foi %d\n", pib1 > pib2);
+        printf("o vencedor do PIB per capta foi %d\n", pibcap1 >pibcap2);
+        printf("o vencedor com a maior polpulacao foi %d\n", Polp1 > Polp2);
+        printf("o vencedor de maior estado foi %d\n", Area1 > Area2);
+        printf("o vencedor de mais pontos turisticos foi %d\n", Turi1 > Turi2);
+        printf("e a carta com o maior poder e %d\n", Spoder1 > Spoder2);
+        printf("==============================================================\n");
+
+  
     return 0;
 }
