@@ -52,7 +52,7 @@ int main (){
 
         dens1 = (float) Polp1 / Area1;
 
-        pibcap1 = (float) pib1 / Polp1;
+        pibcap1 = (float) Polp1 / pib1;
     
 
         printf("==============================================================\n");
@@ -105,7 +105,7 @@ int main (){
 
         dens2 = (float) Polp2 / Area2;
 
-        pibcap2 = (float) pib2 / Polp2;
+        pibcap2 = (float) Polp2 / pib2;
 
         printf("==============================================================\n");
         printf("Os dados da carta 2 sao: \n");
@@ -117,7 +117,7 @@ int main (){
         printf("PIB: %.2f\n", pib2);
         printf("Pontos Turisticos: %d\n", Turi2);
         printf("A densidade do estado: %.2f\n", dens2);
-        printf("O pib per capita e: %.3f\n", pibcap2);
+        printf("O pib per capita e: %.5f\n", pibcap2);
         printf("==============================================================\n");
 
         Dens1V = 1 / dens1;
