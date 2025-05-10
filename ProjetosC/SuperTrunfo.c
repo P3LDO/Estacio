@@ -71,7 +71,7 @@ int main (){
         printf("==============================================================\n");
         printf("       incira a letra do segundo estado (*de A a H):         \n");
         printf("==============================================================\n");
-        scanf(" %c", &Estado2);
+        scanf(" %c", &Estado2 );
 
         printf("==============================================================\n");
         printf("               agora escreva o codigo do estado:              \n");
@@ -81,7 +81,7 @@ int main (){
         printf("==============================================================\n");
         printf("                agora escreva o nome do estado:               \n");
         printf("==============================================================\n");
-        scanf("%s", Nome2);
+        scanf("%s", Nome2 );
 
         printf("==============================================================\n");
         printf("   agora escreva numero de pessoas que vive nesse estado:     \n");
@@ -122,16 +122,16 @@ int main (){
 
         Dens1V = 1 / dens1;
 
-        Spoder1 = Polp1 + pib1 + pibcap1 + dens1;
+        Spoder1 = Polp1 + pib1 + pibcap1 + Dens1V;
 
         Dens2V = 1 / dens2;
 
-        Spoder2 = Polp2 + pib2 + pibcap2 + dens2;
+        Spoder2 = Polp2 + pib2 + pibcap2 + Dens2V;
 
         printf("==============================================================\n");
         printf("AGORA VEREMOS QUAL CARTA TEM MAIS PONTOS \n");
         printf("SE O RESULDATO FOR 1 A PRIMEIRA CARTA VENCEU\n");
-        printf("SE O RESULTADO FOR 0 A SEGUNDA CARTA VENCEU \n   ");
+        printf("SE O RESULTADO FOR 0 A SEGUNDA CARTA VENCEU \n");
         printf("==============================================================\n");
         printf("o vencedor do PIB foi %d\n", pib1 > pib2);
         printf("o vencedor do PIB per capta foi %d\n", pibcap1 >pibcap2);
