@@ -18,7 +18,7 @@ int main (){
         printf("==============================================================\n");
         printf("       incira a letra do primeiro estado (*de A a H):         \n");
         printf("==============================================================\n");
-        scanf(" %c", &Estado1 );
+        scanf(" %s", Estado1 );
 
         printf("==============================================================\n");
         printf("               agora escreva o codigo do estado:              \n");
@@ -71,7 +71,7 @@ int main (){
         printf("==============================================================\n");
         printf("       incira a letra do segundo estado (*de A a H):         \n");
         printf("==============================================================\n");
-        scanf(" %c", &Estado2 );
+        scanf(" %s", Estado2 );
 
         printf("==============================================================\n");
         printf("               agora escreva o codigo do estado:              \n");
@@ -130,15 +130,57 @@ int main (){
 
         printf("==============================================================\n");
         printf("AGORA VEREMOS QUAL CARTA TEM MAIS PONTOS \n");
-        printf("SE O RESULDATO FOR 1 A PRIMEIRA CARTA VENCEU\n");
-        printf("SE O RESULTADO FOR 0 A SEGUNDA CARTA VENCEU \n");
         printf("==============================================================\n");
-        printf("o vencedor do PIB foi %d\n", pib1 > pib2);
-        printf("o vencedor do PIB per capta foi %d\n", pibcap1 >pibcap2);
-        printf("o vencedor com a maior polpulacao foi %d\n", Polp1 > Polp2);
-        printf("o vencedor de maior estado foi %d\n", Area1 > Area2);
-        printf("o vencedor de mais pontos turisticos foi %d\n", Turi1 > Turi2);
-        printf("e a carta com o maior poder e %d\n", Spoder1 > Spoder2);
+
+        if (pib1 > pib2)
+        {
+            printf("A carta 1 tem o maior pib com : %.2f\n", pib1);
+        } else {
+            printf("A carta 2 tem o maior pib com : %.2f\n", pib2);
+        };
+
+        if (pibcap1 > pibcap2)
+        {
+            printf("A carta 1 temo maior pir per capta com : %d\n", pibcap1);
+        } else {
+            printf("A carta 2 temo maior pir per capta com : %d\n", pibcap2);
+        };
+        
+        if (Polp1 > Polp2)
+        {
+            printf("A carta 1 tem mais polpulaçao com %d cidadoes\n", Polp1);
+        } else {
+            printf("A carta 2 tem mais polpulaçao com %d cidadoes\n", Polp2);
+        };
+        
+        if (Area1 > Area2)
+        {
+            printf("A carte 1 tem a maior area com : %.2f M²\n", Area1);
+        } else {
+            printf("A carte 2 tem a maior area com : %.2f M²\n", Area2);
+        };
+        
+        if (Turi1 > Turi2)
+        {
+            printf("A carta 1 tem mais pontos turisticos com : %d\n", Turi1);
+        } else {
+            printf("A carta 2 tem mais pontos turisticos com : %d\n", Turi2);
+        };
+
+        if (dens1 < dens2)
+        {
+            printf("A carta 1 com menor densidade com : %.2f", dens1);
+        } else {
+            printf("A carta 1 com menor densidade com : %.2f", dens1);
+        };
+        
+        
+        if (Spoder1 > Spoder2)
+        {
+            printf("A carta 1 Tem o maior poder com %d de poder\n", Spoder1);
+        } else{
+            printf("A carta 2 Tem o maior poder com %d de poder\n", Spoder2);
+        };
         printf("==============================================================\n");
 
   
