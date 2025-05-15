@@ -57,7 +57,7 @@ int main (){
 
         printf("==============================================================\n");
         printf("Os dados da carta 1 sao: \n");
-        printf("Estado: %c\n", Estado1); 
+        printf("Estado: %s\n", Estado1); 
         printf("Codigo: %s\n", Codigo1);
         printf("Nome: %s\n", Nome1);
         printf("Polpulacao: %d\n", Polp1);
@@ -109,7 +109,7 @@ int main (){
 
         printf("==============================================================\n");
         printf("Os dados da carta 2 sao: \n");
-        printf("Estado: %c\n", Estado2); 
+        printf("Estado: %s\n", Estado2); 
         printf("Codigo: %s\n", Codigo2);
         printf("Nome: %s\n", Nome2);
         printf("Polpulacao: %d\n", Polp2);
@@ -141,9 +141,9 @@ int main (){
 
         if (pibcap1 > pibcap2)
         {
-            printf("A carta 1 temo maior pir per capta com : %d\n", pibcap1);
+            printf("A carta 1 temo maior pib per capta com : %.2f\n", pibcap1);
         } else {
-            printf("A carta 2 temo maior pir per capta com : %d\n", pibcap2);
+            printf("A carta 2 temo maior pib per capta com : %.2f\n", pibcap2);
         };
         
         if (Polp1 > Polp2)
@@ -155,9 +155,9 @@ int main (){
         
         if (Area1 > Area2)
         {
-            printf("A carte 1 tem a maior area com : %.2f M²\n", Area1);
+            printf("A carte 1 tem a maior area com : %.2f\n", Area1);
         } else {
-            printf("A carte 2 tem a maior area com : %.2f M²\n", Area2);
+            printf("A carte 2 tem a maior area com : %.2f\n", Area2);
         };
         
         if (Turi1 > Turi2)
@@ -169,17 +169,17 @@ int main (){
 
         if (dens1 < dens2)
         {
-            printf("A carta 1 com menor densidade com : %.2f", dens1);
+            printf("A carta 1 com menor densidade com : %.2f\n", dens1);
         } else {
-            printf("A carta 1 com menor densidade com : %.2f", dens1);
+            printf("A carta 1 com menor densidade com : %.2f\n", dens1);
         };
         
         
         if (Spoder1 > Spoder2)
         {
-            printf("A carta 1 Tem o maior poder com %d de poder\n", Spoder1);
+            printf("A carta 1 Tem o maior poder com %.2f de poder\n", Spoder1);
         } else{
-            printf("A carta 2 Tem o maior poder com %d de poder\n", Spoder2);
+            printf("A carta 2 Tem o maior poder com %.2f de poder\n", Spoder2);
         };
         printf("==============================================================\n");
 
