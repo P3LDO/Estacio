@@ -13,21 +13,21 @@ int main() {
     scanf("%u", &etq);
 
     if (tempra > 30){
-        printf("A temperatura esta muito alta");
+        printf("A temperatura esta muito alta ");
     } else {
-        printf("A temperatura esta ideal");
+        printf("A temperatura esta ideal ");
     }
 
     if (umi >50){
-        printf("A humidade esta muito elevada");
+        printf("A humidade esta muito elevada ");
     } else {
-        printf("A humidade esta ideal");
+        printf("A humidade esta ideal ");
     }
 
     if (etq < etq_min) {
-        printf("o estoque esta abaixo do minimo");
+        printf("o estoque esta abaixo do minimo ");
     } else {
-        printf("O estoque e o suficiente");
+        printf("O estoque e o suficiente ");
     }
 
     return 0;
