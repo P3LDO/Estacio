@@ -5,15 +5,8 @@ int main (){
     char Estado1[15], Estado2[15];
     char Codigo1[4], Codigo2[4];
     char Nome1[50], Nome2[50];
-    int Turi1, Turi2; //pontos turisticos
-    int Polp1, Polp2; //polpulação
-    float Area1, Area2;
-    float pib1, pib2;
-    float pibcap1, pibcap2;
-    float dens1, dens2;
-    float Spoder1, Spoder2;
-    float Dens1V, Dens2V;
-
+    int Turi1, Turi2, Polp1, Polp2; //polpulação
+    float Area1, Area2, pib1, pib2, pibcap1, pibcap2, dens1, dens2, Spoder1, Spoder2, Dens1V, Dens2V;
 
         printf("==============================================================\n");
         printf("       incira a letra do primeiro estado (*de A a H):         \n");
@@ -130,6 +123,7 @@ int main (){
 
         printf("==============================================================\n");
         printf("AGORA VEREMOS QUAL CARTA TEM MAIS PONTOS \n");
+        printf("DIGITE O NUMERO DE  \n");
         printf("==============================================================\n");
 
         if (pib1 > pib2)
