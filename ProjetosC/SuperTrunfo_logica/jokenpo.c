@@ -5,6 +5,7 @@
 int main() {
 
     int EJ, EM;
+    
     srand(time(0));
 
     printf("Jogo de jokenpo \n");
