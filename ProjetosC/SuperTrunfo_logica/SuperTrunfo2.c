@@ -229,7 +229,7 @@ int main (){
 
         default:
 
-            printf("Voce nao selecionou uma opcao valida");
+            printf("Voce nao selecionou uma opcao valida\n");
             break;
         };
         printf("==============================================================\n");
@@ -351,7 +351,7 @@ int main (){
 
         default:
 
-            printf("Voce nao selecionou uma opcao valida");
+            printf("Voce nao selecionou uma opcao valida\n");
             break;
         };
         printf("==============================================================\n");
@@ -473,7 +473,7 @@ int main (){
 
         default:
 
-            printf("Voce nao selecionou uma opcao valida");
+            printf("Voce nao selecionou uma opcao valida\n");
             break;
         };
         printf("==============================================================\n");
@@ -481,13 +481,9 @@ int main (){
         if (pts1 > pts2)
         {
             printf("O Territorio 1 com %d pontos", pts1);
-        } else if (pts1 < pts2)
-        {
-            printf("O Territorio 2 com %d pontos", pts2);  
         } else
         {
-            printf("DEU EMPATE ");
-            Spoder1 > Spoder2 ? printf("O Spoder do territorio 1 e maior com %d", Spoder1) : printf("O Spoder do territorio 2 e maior com %d", Spoder2);
+            printf("O Territorio 2 com %d pontos", pts2);  
         };
         
     
