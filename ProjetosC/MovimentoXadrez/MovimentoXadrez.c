@@ -1,31 +1,50 @@
 #include<stdio.h>
 
+void MRainha(int M) {
+    if (M > 0)
+    {
+        printf("ESQUERDA\n");
+        MRainha (M - 1);
+    };    
+}
+
+void MTORRE(int M) {
+    if (M > 0)
+    {
+        printf("DIREITA\n");
+        MTORRE (M - 1);
+    };
+    
+}
+
+void MBISPO(int M) {
+    if (M > 0)
+    {
+        printf("DIREITA\n");
+        printf("CIMA\n");
+        MBISPO (M - 1);
+    };
+    
+}
+
 int main() {
 
     int Bispo, Torre, Rainha, cavalo;
 
-    //Movimento da Rainha//
-    printf("A rainha vai se mover 8 casas para a direita\n");
+    printf("A rainha vai se mover 8 casas para a esquerda\n");
     Rainha = 8;
-    for (int i = 0; i < Rainha; i++)
-    {
-        printf("ESQUERDA\n");
-    };
+    MRainha(Rainha);
+    printf("\n");
 
     printf("A torre vai se andar 5 casas para a direita\n");
     Torre = 5;
-    for (int i = 0; i < Torre; i++)
-    {
-        printf("DIREITA\n");
-    };
+    MTORRE(Torre);
+    printf("\n");
 
     printf("O Bispo vai se andar 5 casas para a diagonal direita\n");
     Bispo = 5;
-    for (int i = 0; i < Bispo; i++)
-    {
-        printf("DIREITA\n");
-        printf("CIMA\n");
-    };
+    MBISPO(Bispo);
+    printf("\n");
 
     printf("o CAVALO VAI ANDAR EM L PRA A ESQUERDA INFERIOR\n");
     cavalo = 1;
@@ -37,6 +56,7 @@ int main() {
         }
         printf("ESQUERDA\n");
     }
+    printf("\n");
     
 
     return 0;
