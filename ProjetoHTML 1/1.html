@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A-X-U-L</title>
     <style>
-        
+    
     </style>
 </head>
 <body>
@@ -16,18 +16,32 @@
         <li>Não :(</li>
     </ul>
 
-    <table>
+    <table width="100%" border="1">
         <tr>
-            <td>fé</td>
+            <td rowspan="2">fé</td>
             <td>nas</td>
             <td>malukas</td>
         </tr>
         <tr>
             <td>ou</td>
             <td>não</td>
-            <td>fé</td>
         </tr>
     </table>
+
+    <fieldset width="50%">
+        <legend>Dados Pessoais</legend>
+        <label for="Nome">Seu Nome:</label>
+        <input type="text" id="Nome" required><br>
+        <label for="email">Seu email:</label>
+        <input type="text" id="email" required><br>
+        <label for="numero">Seu numero:</label>
+        <input type="text" id="numero" minlength="8"required> <br>
+        <label for="data">Sua data de nascimento</label>
+        <input type="date" id="data" required>
+    </fieldset>
+    <fieldset>
+        <button type="submit">Enviar</button>
+    </fieldset>
 </body>
 <footer>
     <p>SITE FEITO POR <a href="https://github.com/P3LDO">Pedro Kayro</a></p>
