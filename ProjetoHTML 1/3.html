@@ -6,17 +6,23 @@
     <title>Fé</title>
     <style>
         div {
-            padding: 50px;
+            padding: 50px;  
         }
-        div:hover{
-            background: aqua;
+        .divteste1{
+            background: purple;
+            border: 1px solid black;
+            width: 50%;
+            text-align: center;
+        }
+        .divteste1:hover{
+            background-color: blue;
         }
         #home{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
         }
-        #div1{
-            background: blue;
+        /*#div1{
+            background-color: blue;
             border: 1px solid black;
         }
         #div2{
@@ -26,14 +32,14 @@
         #div3{
             background: purple;
             border: 1px solid black;
-        }
+        }*/
     </style>
 </head>
 <body>
     <div id="home">
-        <div id="div1">fé</div>
-        <div id="div2">fé</div>
-        <div id="div3">fé</div>
+        <div class="divteste1" id="div1">fé</div>
+        <div class="divteste1" id="div2">fé</div>
+        <div class="divteste1" id="div3">fé</div>
     </div>
 </body>
 </html>
